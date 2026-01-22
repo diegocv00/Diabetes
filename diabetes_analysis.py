@@ -390,13 +390,13 @@ def main():
             
             if not df_no_poseen_diabetes.empty:
                 ax1.hist(df_no_poseen_diabetes['insulin_level'], bins=50, color='#8CFFDF')
-                ax1.set_title("Nivel de Insulina (sin diabetes)")
-                ax1.set_xlabel("uIU/mL")
+                ax1.set_title("Nivel de insulina (sin diabetes)")
+                ax1.set_xlabel("µU/mL")
 
             if not df_poseen_diabetes.empty:
                 ax2.hist(df_poseen_diabetes['insulin_level'], bins=50, color='#FFDD8C')
-                ax2.set_title("Nivel de Insulina (con diabetes)")
-                ax2.set_xlabel("uIU/mL")
+                ax2.set_title("Nivel de insulina (con diabetes)")
+                ax2.set_xlabel("µU/mL")
             
             analysis_text ="El nivel de insulina es un indicador importante de la resistencia a la insulina. Interesantemente, algunos pacientes con diabetes tipo 2 pueden tener niveles de insulina más altos debido a la resistencia, mientras que los tipo 1 pueden tener niveles bajos"
             add_analysis_text(fig, analysis_text)
